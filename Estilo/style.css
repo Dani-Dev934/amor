@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: titulo;
+    src: url(/fontes/Dirtylane\ \(Demo_Font\).otf) format ('opentype');
+    font-weight: normal;
+}    
+@font-face {
+    font-family: texto;
+    src: url(/fontes/Modern\ Romance.otf) format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: padrão;
+    src: url(/fontes/Belgiano\ Serif\ 2.ttf) format('truetype');
+}
+
+:root{
+    --cabeçalho: #875473;
+    --titulo: #26061a;
+    --fundo: #E0C8D7;
+    --tex-cf: #5423418f;
+    --tex-sf: #F2CDE4;
+
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+body{
+    background-color: var(--fundo);
+    font-family: 'padrão', serif;
+}
+
+header{
+    background-color: var(--cabeçalho);
+    color: var(--titulo);
+    text-align: center;
+    padding: 20px;
+
+}
+header>h1{
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-family:'titulo', cursive;
+    font-size: 8vw
+    
+    
+}
+ header>p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 3vh;
+    
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--titulo);
+}
+
+a:hover{
+    color: var(--tex-sf);
+}
+section{
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 3vw;
+}
+section>p{
+    font-family: 'texto', sans-serif;
+    padding-bottom: 1em;
+     
+
+}
+
+section.normal{
+    background-color: var(--tex-sf);
+    color: var(--titulo);
+}
+
+section.imagem{
+    background-color: var(--tex-cf);
+    color: var(--titulo);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+section.imagem>p{
+    
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+   
+}
+
+#img1{
+    background-image: url(../imagens/cr.jpg);
+    background-position: bottom center;
+}
+
+#img2{
+    background-image: url(../imagens/cv.jpg);
+}
+
+footer{
+    background-color: var(--cabeçalho);
+    color: var(--titulo);
+    text-align: center;
+    padding: 10px;
+    font-size: 2vh;
+}
