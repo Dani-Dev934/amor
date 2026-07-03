@@ -70,7 +70,7 @@ a:hover{
 }
 section{
     margin: auto;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     font-size: 3vw;
@@ -78,6 +78,7 @@ section{
 section>p{
     font-family: 'texto', sans-serif;
     padding-bottom: 1em;
+    font-size: 3vw;
      
 
 }
